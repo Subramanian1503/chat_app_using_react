@@ -1,12 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "../styles/App.module.css";
+import Home from "./Home";
 
 function App() {
   return (
     <div className="App">
-      <p>Initial level of project</p>
+      <Home />
     </div>
   );
 }
-
+ 
 export default App;

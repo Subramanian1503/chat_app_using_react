@@ -1,0 +1,37 @@
+.recentChatListContainer {
+  height: 660px;
+  width: 400px;
+  border: 2px solid black;
+}
+
+.recentChatListHeaderContainer {
+  height: 75px;
+  width: inherit;
+  border: 2px solid black;
+  display: flex;
+}
+
+.recentChatListHeader{
+    height: inherit;
+    width: 300px;
+    border: 2px solid black;
+}
+
+.addChatButtonContainer{
+    height: inherit;
+    width: 100px;
+    border: 2px solid black;
+}
+
+.recentChatList{
+  list-style: none;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  max-height: 570px;
+  overflow-y: auto;
+}
+
+.recentChatList::-webkit-scrollbar{
+  display: none;
+}
