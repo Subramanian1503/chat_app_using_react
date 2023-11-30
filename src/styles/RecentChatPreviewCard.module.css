@@ -9,6 +9,17 @@
   background-color: rgba(0, 0, 0, 0.3); /* Black partially transparent background */
 }
 
+.recentSelectedChatPreviewCardContainer {
+  width: inherit;
+  height: 80px;
+  border: 2px solid black;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  /* border-radius: 10px; */
+  background-color: rgba(0, 0, 0, 0.8); /* Black partially transparent background */
+}
+
 .leftPartition {
   height: inherit;
   width: 400px;

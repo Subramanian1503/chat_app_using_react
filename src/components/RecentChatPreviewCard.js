@@ -1,12 +1,28 @@
+import { useChatConversations } from "../hooks";
 import styles from "../styles/RecentChatPreviewCard.module.css";
 
 function RecentChatPreviewCard({
   receipentName,
   profilePic,
   lastConversation,
+  selected,
+  index,
 }) {
+  const chatConversationsImpl = useChatConversations();
+
+  const handleOnClick = () => {
+    chatConversationsImpl.setSelectedChatInPreview(index);
+  };
+
   return (
-    <div className={styles.recentChatPreviewCardContainer}>
+    <div
+      className={
+        selected
+          ? styles.recentSelectedChatPreviewCardContainer
+          : styles.recentChatPreviewCardContainer
+      }
+      onClick={handleOnClick}
+    >
       {/* left partition */}
       <div className={styles.leftPartition}>
         {/* profile picture */}

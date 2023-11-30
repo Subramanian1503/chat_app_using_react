@@ -6,8 +6,7 @@ const initialState = {
   selectedChat: 0,
   chatConversations: [],
   addChatConversation: () => {},
-  moveCursorUpOnChat: () => {},
-  moveCursorDownOnChat: () => {},
+  setSelectedChatInPreview: () => {},
 };
 
 // Create context to save the chat conversations

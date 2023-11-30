@@ -41,11 +41,16 @@ export const useChatConversationsProvider = () => {
     }
   };
 
+  const setSelectedChatInPreview = (index) => {
+    if (index >= 0 && index < chatCoversations.length) {
+      setSelectedChat(index);
+    }
+  };
+
   return {
     selectedChat: selectedChat,
     chatConversations: chatCoversations,
     addChatConversation: addChatConversation,
-    moveCursorUpOnChat: moveCursorUpOnChat,
-    moveCursorDownOnChat: moveCursorDownOnChat,
+    setSelectedChatInPreview: setSelectedChatInPreview,
   };
 };

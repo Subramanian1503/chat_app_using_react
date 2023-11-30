@@ -5,7 +5,7 @@ import { useChatConversations } from "../hooks";
 function RecentChatList() {
   const chatConversationsImpl = useChatConversations();
   const conversationDatas = chatConversationsImpl.chatConversations;
-
+  const selectedChat = chatConversationsImpl.selectedChat;
   return (
     <div className={styles.recentChatListContainer}>
       {/* header for conversation */}
@@ -19,66 +19,17 @@ function RecentChatList() {
 
       {/* List of recent chat previews */}
       <ul className={styles.recentChatList}>
-        {conversationDatas.map((data) => {
+        {conversationDatas.map((data, index) => {
           return (
-            <>
-              <li>
-                <RecentChatPreviewCard
-                  receipentName={data.to}
-                  profilePic={data.profilePic}
-                  lastConversation={data.conversation[0]}
-                />
-              </li>
-              <li>
-                <RecentChatPreviewCard
-                  receipentName={data.to}
-                  profilePic={data.profilePic}
-                  lastConversation={data.conversation[0]}
-                />
-              </li>
-              <li>
-                <RecentChatPreviewCard
-                  receipentName={data.to}
-                  profilePic={data.profilePic}
-                  lastConversation={data.conversation[0]}
-                />
-              </li>
-              <li>
-                <RecentChatPreviewCard
-                  receipentName={data.to}
-                  profilePic={data.profilePic}
-                  lastConversation={data.conversation[0]}
-                />
-              </li>
-              <li>
-                <RecentChatPreviewCard
-                  receipentName={data.to}
-                  profilePic={data.profilePic}
-                  lastConversation={data.conversation[0]}
-                />
-              </li>
-              <li>
-                <RecentChatPreviewCard
-                  receipentName={data.to}
-                  profilePic={data.profilePic}
-                  lastConversation={data.conversation[0]}
-                />
-              </li>
-              <li>
-                <RecentChatPreviewCard
-                  receipentName={data.to}
-                  profilePic={data.profilePic}
-                  lastConversation={data.conversation[0]}
-                />
-              </li>
-              <li>
-                <RecentChatPreviewCard
-                  receipentName={data.to}
-                  profilePic={data.profilePic}
-                  lastConversation={data.conversation[0]}
-                />
-              </li>
-            </>
+            <li>
+              <RecentChatPreviewCard
+                receipentName={data.to}
+                profilePic={data.profilePic}
+                lastConversation={data.conversation[0]}
+                selected={index == selectedChat}
+                index={index}
+              />
+            </li>
           );
         })}
       </ul>
