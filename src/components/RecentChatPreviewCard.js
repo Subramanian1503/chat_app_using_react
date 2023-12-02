@@ -2,8 +2,7 @@ import { useChatConversations } from "../hooks";
 import styles from "../styles/RecentChatPreviewCard.module.css";
 
 function RecentChatPreviewCard({
-  receipentName,
-  profilePic,
+  receipentInfo,
   lastConversation,
   selected,
   index,
@@ -28,7 +27,7 @@ function RecentChatPreviewCard({
         {/* profile picture */}
         <div className={styles.profilePictureContainer}>
           <img
-            src={profilePic}
+            src={receipentInfo[0].profilePic}
             alt="profile_img"
             className={styles.profilePic}
           />
@@ -39,15 +38,17 @@ function RecentChatPreviewCard({
           {/* profileName */}
           <div className={styles.profileNameContainer}>
             <div className={styles.profileName}>
-              {receipentName.length > 1
-                ? receipentName.map((name) => name + ",")
-                : receipentName[0]}
+              {receipentInfo.length > 1
+                ? receipentInfo.map((receipent) => receipent.name + ",")
+                : receipentInfo[0].name}
             </div>
           </div>
 
           {/* lastMessage */}
           <div className={styles.lastMessageContainer}>
-            <div className={styles.lastMessage}>{lastConversation.chat[lastConversation.chat.length - 1]}</div>
+            <div className={styles.lastMessage}>
+              {lastConversation.chat[lastConversation.chat.length - 1]}
+            </div>
           </div>
         </div>
       </div>

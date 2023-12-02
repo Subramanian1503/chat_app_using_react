@@ -1,24 +1,88 @@
 {
   "conversations": [
     {
-      "to": ["Mahima"],
-      "profilePic": "https://cdn.dribbble.com/users/3734064/screenshots/14348087/media/a99ab961c8f8c7d29b5f7136e0b19ca4.png",
-      "conversation": [
+      "id": 1,
+      "to": [
+        {
+          "name": "Mahima",
+          "profilePic": "https://cdn.dribbble.com/users/3734064/screenshots/14348087/media/a99ab961c8f8c7d29b5f7136e0b19ca4.png"
+        }
+      ],
+      "conversationList": [
         {
           "chat": ["Hi da", "Ena panra"],
           "time": "8:47",
-          "person": "Mahima"
+          "person": {
+            "name": "Mahima",
+            "profilePic": "https://cdn.dribbble.com/users/3734064/screenshots/14348087/media/a99ab961c8f8c7d29b5f7136e0b19ca4.png"
+          }
+        },
+        {
+          "chat": ["Hi ka", "Chumma tha neenga?"],
+          "time": "8:48",
+          "person": {
+            "name": "me",
+            "profilePic": "https://images.vexels.com/content/145908/preview/male-avatar-maker-2a7919.png"
+          }
+        },
+        {
+          "chat": ["suma tha da", "Iniki ena plan ?"],
+          "time": "8:49",
+          "person": {
+            "name": "Mahima",
+            "profilePic": "https://cdn.dribbble.com/users/3734064/screenshots/14348087/media/a99ab961c8f8c7d29b5f7136e0b19ca4.png"
+          }
+        },
+        {
+          "chat": ["Hi da", "Ena panra"],
+          "time": "8:50",
+          "person": {
+            "name": "Mahima",
+            "profilePic": "https://cdn.dribbble.com/users/3734064/screenshots/14348087/media/a99ab961c8f8c7d29b5f7136e0b19ca4.png"
+          }
+        },
+        {
+          "chat": ["Hi ka", "Chumma tha neenga?"],
+          "time": "8:55",
+          "person": {
+            "name": "me",
+            "profilePic": "https://images.vexels.com/content/145908/preview/male-avatar-maker-2a7919.png"
+          }
+        },
+        {
+          "chat": ["suma tha da", "Iniki ena plan ?"],
+          "time": "8:56",
+          "person": {
+            "name": "Mahima",
+            "profilePic": "https://cdn.dribbble.com/users/3734064/screenshots/14348087/media/a99ab961c8f8c7d29b5f7136e0b19ca4.png"
+          }
         }
       ]
     },
     {
-      "to": ["Abi"],
-      "profilePic": "https://static.vecteezy.com/system/resources/previews/020/765/399/non_2x/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg",
-      "conversation": [
+      "id": 2,
+      "to": [
         {
-          "chat": "Hi",
-          "time": "5:24",
-          "person": "me"
+          "name": "Abi",
+          "profilePic": "https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-women-cartoon-avatar-in-flat-style-png-image_6110776.png"
+        }
+      ],
+      "conversationList": [
+        {
+          "chat": ["Hi da", "Ena panra"],
+          "time": "8:47",
+          "person": {
+            "name": "Abi",
+            "profilePic": "https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-women-cartoon-avatar-in-flat-style-png-image_6110776.png"
+          }
+        },
+        {
+          "chat": ["Hi", "Chumma tha neenga?"],
+          "time": "8:48",
+          "person": {
+            "name": "me",
+            "profilePic": "https://images.vexels.com/content/145908/preview/male-avatar-maker-2a7919.png"
+          }
         }
       ]
     }

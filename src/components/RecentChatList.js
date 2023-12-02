@@ -21,12 +21,15 @@ function RecentChatList() {
       <ul className={styles.recentChatList}>
         {conversationDatas.map((data, index) => {
           return (
-            <li>
+            <li id={conversationDatas.id}>
               <RecentChatPreviewCard
-                receipentName={data.to}
-                profilePic={data.profilePic}
-                lastConversation={data.conversation[0]}
-                selected={index == selectedChat}
+                receipentInfo={data.to}
+                lastConversation={
+                  data.conversationList.length == 1
+                    ? data.conversationList[0]
+                    : data.conversationList[data.conversationList.length - 1]
+                }
+                selected={index === selectedChat}
                 index={index}
               />
             </li>

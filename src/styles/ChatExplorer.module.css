@@ -2,6 +2,7 @@
   height: max-content;
   width: 1110px;
   border: 2px solid black;
+  border-bottom: none;
 }
 
 .headerContainer {
@@ -65,18 +66,17 @@
   width: inherit;
 }
 
-.conversationList{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .receivedChatMessageContainer {
   display: flex;
   flex-direction: column;
   max-width: 400px;
   float: left;
   margin-left: 30px;
+}
+
+.receivedChatAvatar {
+  margin-right: 20px;
+  margin-top: 5px;
 }
 
 .received_messg_profilePic {
@@ -100,10 +100,31 @@
   border-radius: 10px;
 }
 
-.conversationList{
+.conversationList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  height: 555px;
+  overflow-y: auto;
+  border: 2px solid black;
+}
 
+.conversationList::-webkit-scrollbar {
+  display: none;
+}
+
+.chatInfoContainer{
+  display: flex;
+  /* border: 2px solid black; */
+  align-content: center;
+  justify-content: center;
+}
+
+.chat_time{
+  /* display: inline-block; */
+  padding-top: 20px;
 }
 
 .outgoingChatMessageContainer {
@@ -114,9 +135,14 @@
   margin-right: 30px;
 }
 
+.outgoingMessageChatAvatar {
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
 .outgoing_messg_profilePic {
   height: 50px;
-  width: 50px;
+  width: max-content;
   border-radius: 80%;
 }
 
@@ -133,4 +159,59 @@
   padding: 10px 10px 10px 10px;
   margin-left: 10px;
   border-radius: 10px;
+}
+
+.optionsContainer {
+  height: 100px;
+  width: 1080px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  /* align-content: center; */
+  /* padding-right: 30px; */
+  padding-left: 30px;
+}
+
+.attchmentContainer {
+  height: 40px;
+  width: 50px;
+  margin-top: 20px;
+  /* border: 2px solid black; */
+  cursor: pointer;
+}
+
+.messageInputContainer {
+  height: 50px;
+  width: 600px;
+  margin-top: 20px;
+  /* border: 2px solid black; */
+  display: flex;
+}
+
+.sendMessageContainer {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  /* border: 2px solid black; */
+  cursor: pointer;
+}
+
+.sendMessageButton{
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.messageInputContainer input {
+  height: 50px;
+  width: 500px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  border: none;
+}
+
+.attchImage {
+  height: 50px;
+  width: 35px;
 }
