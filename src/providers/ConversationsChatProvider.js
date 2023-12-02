@@ -1,10 +1,11 @@
 import { createContext } from "react";
 import { useChatConversationsProvider } from "../hooks";
+import data from "../resources/Conversation-data.json";
 
 // Define the initial state for the chat conversation context
 const initialState = {
   selectedChat: 0,
-  chatConversations: [],
+  chatConversations: data.conversations,
   addChatConversation: () => {},
   setSelectedChatInPreview: () => {},
 };

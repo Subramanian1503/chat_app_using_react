@@ -10,16 +10,17 @@ export const useChatConversations = () => {
 // Create a provider hook which will handle all the chat coversations related operations
 export const useChatConversationsProvider = () => {
   // Define the state required for this provider
-  const [chatCoversations, setChatCoversations] = useState([]);
+  const [chatCoversations, setChatCoversations] = useState(data.conversations);
   const [selectedChat, setSelectedChat] = useState(0);
 
-  // Define the use effect method to load information from the source
-  useEffect(() => {
-    // Read the required informations from data file
-    const getRequiredConversationInformation = data.conversations;
+  // // Define the use effect method to load information from the source
+  // useEffect(() => {
+  //   // Read the required informations from data file
+  //   const getRequiredConversationInformation = data.conversations;
+  //   console.log("loading datas");
 
-    setChatCoversations(getRequiredConversationInformation);
-  }, []);
+  //   setChatCoversations(getRequiredConversationInformation);
+  // }, [chatCoversations, selectedChat]);
 
   // Define the implementations required for this provider
   const addChatConversation = (chatCoversation) => {

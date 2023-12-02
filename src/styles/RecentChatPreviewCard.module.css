@@ -1,7 +1,7 @@
 .recentChatPreviewCardContainer {
   width: inherit;
   height: 80px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   /* flex-direction: column; */
   justify-content: space-between;
@@ -12,7 +12,7 @@
 .recentSelectedChatPreviewCardContainer {
   width: inherit;
   height: 80px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   /* flex-direction: column; */
   justify-content: space-between;

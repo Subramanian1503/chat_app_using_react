@@ -47,7 +47,7 @@ function RecentChatPreviewCard({
 
           {/* lastMessage */}
           <div className={styles.lastMessageContainer}>
-            <div className={styles.lastMessage}>{lastConversation.chat}</div>
+            <div className={styles.lastMessage}>{lastConversation.chat[lastConversation.chat.length - 1]}</div>
           </div>
         </div>
       </div>
