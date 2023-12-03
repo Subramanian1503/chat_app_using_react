@@ -3,11 +3,12 @@ import styles from "../styles/SearchConversation.module.css";
 import { useState } from "react";
 
 function SearchConversation() {
-  const [searchValue, setSearchValue] = useState();
+  const [searchValue, setSearchValue] = useState("");
   const chatConversationImpl = useChatConversations();
 
   const handleSearch = () => {
     chatConversationImpl.searchConversation(searchValue);
+    setSearchValue("");
   };
 
   return (

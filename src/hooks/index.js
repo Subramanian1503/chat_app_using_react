@@ -56,7 +56,9 @@ export const useChatConversationsProvider = () => {
   const searchConversation = (name) => {
     // Iterate the chat conversations
     const exisitingConversationIndex = chatConversations.findIndex(
-      (conversation) => conversation.to[0].name === name
+      (conversation) =>
+        conversation.to[0].name.toLowerCase() ===
+        name.toLowerCase()
     );
 
     if (exisitingConversationIndex === -1) {
