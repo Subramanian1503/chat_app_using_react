@@ -1,6 +1,5 @@
 import styles from "../styles/SelectContacts.module.css";
 import data from "../resources/Conversation-data.json";
-import { useState } from "react";
 import ContactCard from "./ContactCard";
 
 function SelectContacts({ handleClose }) {

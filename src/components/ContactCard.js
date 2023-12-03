@@ -1,6 +1,5 @@
 import { useChatConversations } from "../hooks";
 import styles from "../styles/ContactCard.module.css";
-import { useState } from "react";
 
 function ContactCard({ contact, handleClose }) {
   const ChatConversationImpl = useChatConversations();

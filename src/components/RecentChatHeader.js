@@ -1,8 +1,6 @@
 import styles from "../styles/RecentChatList.module.css";
 import { useState } from "react";
-import Modal from "react-overlays/Modal";
 import AddConversationModal from "./AddConversationModal";
-import data from "../resources/Conversation-data.json";
 
 function RecentChatHeader() {
   const [showModal, setShowModal] = useState(false);
@@ -18,14 +16,6 @@ function RecentChatHeader() {
     setShowModal(false);
     // console.log(showModal);
   };
-
-  const handleSuccess = () => {
-    console.log("success");
-  };
-
-  const renderBackdrop = (props) => (
-    <div className={styles.backdrop} {...props} />
-  );
 
   return (
     <div className={styles.recentChatListHeaderContainer}>

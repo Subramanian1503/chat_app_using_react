@@ -10,7 +10,7 @@ function ConversationsViewer({ conversationList }) {
           return (
             <li className={styles.conversations}>
               {/* incoming message */}
-              {conversation.person.name == "me" ? (
+              {conversation.person.name === "me" ? (
                 <OutgoingMessageTemplate conversation={conversation} />
               ) : (
                 <RecievedMessageTemplate conversation={conversation} />

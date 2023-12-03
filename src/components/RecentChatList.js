@@ -20,7 +20,7 @@ function RecentChatList() {
               <RecentChatPreviewCard
                 receipentInfo={data.to}
                 lastConversation={
-                  data.conversationList.length == 1
+                  data.conversationList.length === 1
                     ? data.conversationList[0]
                     : data.conversationList[data.conversationList.length - 1]
                 }

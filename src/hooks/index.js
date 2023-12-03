@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState } from "react";
 import { ConversationChatContext } from "../providers/ConversationsChatProvider";
 import data from "../resources/Conversation-data.json";
 import { toast } from "react-toastify";
@@ -34,6 +34,7 @@ export const useChatConversationsProvider = () => {
         isAlreadyExistingConversation = true;
         selectedChatForProcessing = index;
       }
+      return selectedChatForProcessing;
     });
 
     console.log(isAlreadyExistingConversation);
@@ -58,7 +59,7 @@ export const useChatConversationsProvider = () => {
       (conversation) => conversation.to[0].name === name
     );
 
-    if (exisitingConversationIndex == -1) {
+    if (exisitingConversationIndex === -1) {
       toast.error("No results found");
       return;
     }
