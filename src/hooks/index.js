@@ -1,6 +1,7 @@
 import { useContext, useState, useEffect } from "react";
 import { ConversationChatContext } from "../providers/ConversationsChatProvider";
 import data from "../resources/Conversation-data.json";
+import { toast } from "react-toastify";
 
 // Create a use context method which will be invoked to get the context informations stored into it
 export const useChatConversations = () => {
@@ -46,6 +47,8 @@ export const useChatConversationsProvider = () => {
     }
 
     setSelectedChat(selectedChatForProcessing);
+
+    toast.success("Conversation added successfully!!");
   };
 
   // This method is used to search the conversation with the name
@@ -56,8 +59,11 @@ export const useChatConversationsProvider = () => {
     );
 
     if (exisitingConversationIndex == -1) {
-      console.log("no users found with given name");
+      toast.error("No results found");
+      return;
     }
+
+    toast.success("Contact found!");
 
     //If index present set that as selected contact
     setSelectedChat(exisitingConversationIndex);
@@ -81,6 +87,8 @@ export const useChatConversationsProvider = () => {
     );
     // Set it to the state
     setChatConversations(updatedChatConversation);
+
+    toast.success("Chat added to conversation");
   };
 
   const setSelectedChatInPreview = (index) => {
