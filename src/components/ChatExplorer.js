@@ -5,7 +5,7 @@ import { useState } from "react";
 function ChatExplorer() {
   // get the conversation information
   const chatConversationsImpl = useChatConversations();
-  const [messageRequest, setMessageRequest] = useState();
+  const [messageRequest, setMessageRequest] = useState("");
 
   // console.log("Chat conversation impl", chatConversationsImpl);
   const conversationDatas = chatConversationsImpl.chatConversations;
@@ -21,8 +21,22 @@ function ChatExplorer() {
   const handleSendMessageRequest = () => {
     // Get the message request
     // Construct the JSON request with the available data
+    const chatRequest = {
+      chat: [messageRequest],
+      time: "8:57",
+      person: {
+        name: "me",
+        profilePic:
+          "https://images.vexels.com/content/145908/preview/male-avatar-maker-2a7919.png",
+      },
+    };
     // Get the id of the conversation
+    const conversationId = selectedConversation.id;
     // Call the method to add the conversation in the conversation list
+    chatConversationsImpl.addChatToConversation(chatRequest, conversationId);
+
+    // Set the text box to empty
+    setMessageRequest("");
   };
 
   return (

@@ -10,7 +10,7 @@ export const useChatConversations = () => {
 // Create a provider hook which will handle all the chat coversations related operations
 export const useChatConversationsProvider = () => {
   // Define the state required for this provider
-  const [chatCoversations, setChatCoversations] = useState(data.conversations);
+  const [chatConversations, setChatConversations] = useState(data.conversations);
   const [selectedChat, setSelectedChat] = useState(0);
 
   // // Define the use effect method to load information from the source
@@ -23,8 +23,31 @@ export const useChatConversationsProvider = () => {
   // }, [chatCoversations, selectedChat]);
 
   // Define the implementations required for this provider
-  const addChatConversation = (chatCoversation) => {
-    setChatCoversations(chatCoversation, ...chatCoversations);
+  const addConversation = (chatCoversation) => {
+    setChatConversations(chatCoversation, ...chatConversations);
+  };
+
+  // This method is used to add a chat to the conversation requested
+  const addChatToConversation = (chatRequest, conversationId) => {
+    // Iterate the conversation
+    // Find the conversation with requested Id
+    const updatedChatConversation = chatConversations.map(
+      (chatConversation) => {
+        if (chatConversation.id === conversationId) {
+          // Add the chat to that conversation
+          chatConversation.conversationList = [
+            ...chatConversation.conversationList,
+            chatRequest,
+          ];
+        }
+        return chatConversation;
+      }
+    );
+
+    console.log("Updated Chat conversation", updatedChatConversation);
+
+    // Set it to the state
+    setChatConversations(updatedChatConversation);
   };
 
   // Chang the selector value based on cursor moving
@@ -37,21 +60,22 @@ export const useChatConversationsProvider = () => {
 
   // Down
   const moveCursorDownOnChat = () => {
-    if (selectedChat < chatCoversations.length - 1) {
+    if (selectedChat < chatConversations.length - 1) {
       setSelectedChat(selectedChat + 1);
     }
   };
 
   const setSelectedChatInPreview = (index) => {
-    if (index >= 0 && index < chatCoversations.length) {
+    if (index >= 0 && index < chatConversations.length) {
       setSelectedChat(index);
     }
   };
 
   return {
     selectedChat: selectedChat,
-    chatConversations: chatCoversations,
-    addChatConversation: addChatConversation,
+    chatConversations: chatConversations,
+    addConversation: addConversation,
     setSelectedChatInPreview: setSelectedChatInPreview,
+    addChatToConversation: addChatToConversation,
   };
 };

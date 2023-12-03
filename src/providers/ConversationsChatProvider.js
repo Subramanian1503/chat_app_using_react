@@ -6,8 +6,9 @@ import data from "../resources/Conversation-data.json";
 const initialState = {
   selectedChat: 0,
   chatConversations: data.conversations,
-  addChatConversation: () => {},
+  addConversation: () => {},
   setSelectedChatInPreview: () => {},
+  addChatToConversation: () => {},
 };
 
 // Create context to save the chat conversations
