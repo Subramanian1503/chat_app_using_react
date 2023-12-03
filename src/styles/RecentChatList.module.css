@@ -7,23 +7,35 @@
 .recentChatListHeaderContainer {
   height: 75px;
   width: inherit;
-  /* border: 2px solid black; */
+  border: 2px solid black;
   display: flex;
+  justify-content: space-between;
 }
 
-.recentChatListHeader{
-    height: inherit;
-    width: 300px;
-    /* border: 2px solid black; */
+.recentChatListHeaderContent {
+  height: 20px;
+  width: 100px;
+  /* border: 2px solid black; */
+  margin-top: 20px;
+  margin-left: 60px;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
 }
 
-.addChatButtonContainer{
-    height: inherit;
-    width: 100px;
-    /* border: 2px solid black; */
+.addChatButtonContainer {
+  height: inherit;
+  width: 100px;
+  /* border: 2px solid black; */
 }
 
-.recentChatList{
+.recentChatListHeader {
+  height: inherit;
+  width: 300px;
+  /* border: 2px solid black; */
+}
+
+.recentChatList {
   list-style: none;
   width: 400px;
   margin: 0;
@@ -32,6 +44,21 @@
   overflow-y: auto;
 }
 
-.recentChatList::-webkit-scrollbar{
+.recentChatList::-webkit-scrollbar {
   display: none;
 }
+
+.addParticipant {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.modal {
+  font-family: arial;
+}
+
+
+
+

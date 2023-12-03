@@ -115,14 +115,14 @@
   display: none;
 }
 
-.chatInfoContainer{
+.chatInfoContainer {
   display: flex;
   /* border: 2px solid black; */
   align-content: center;
   justify-content: center;
 }
 
-.chat_time{
+.chat_time {
   /* display: inline-block; */
   padding-top: 20px;
 }
@@ -196,7 +196,7 @@
   cursor: pointer;
 }
 
-.sendMessageButton{
+.sendMessageButton {
   height: 50px;
   width: 50px;
   cursor: pointer;
@@ -214,4 +214,17 @@
 .attchImage {
   height: 50px;
   width: 35px;
+}
+
+.addParticipantContainer {
+  height: 50px;
+  width: 50px;
+  /* border: 2px solid black; */
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.addParticipant{
+  height: 50px;
+  width: 50px;
 }

@@ -1,10 +1,56 @@
 {
+  "contacts": [
+    {
+      "name": "Contact1",
+      "profilePic": "https://cdn.dribbble.com/users/3734064/screenshots/14348087/media/a99ab961c8f8c7d29b5f7136e0b19ca4.png"
+    },
+    {
+      "name": "Contact2",
+      "profilePic": "https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-women-cartoon-avatar-in-flat-style-png-image_6110776.png"
+    },
+    {
+      "name": "Contact3",
+      "profilePic": "https://png.pngtree.com/png-vector/20190525/ourmid/pngtree-man-avatar-icon-professional-man-character-png-image_1055448.jpg"
+    },
+    {
+      "name": "Contact4",
+      "profilePic": "https://img.freepik.com/premium-vector/girl-s-face-with-beautiful-smile-female-avatar-website-social-network_499739-527.jpg"
+    },
+    {
+      "name": "Contact5",
+      "profilePic": "https://png.pngtree.com/element_our/20190528/ourmid/pngtree-520-girl-avatar-image_1153283.jpg"
+    },
+    {
+      "name": "Contact6",
+      "profilePic": "https://img.freepik.com/premium-vector/portrait-angry-young-woman_478440-114.jpg?size=626&ext=jpg"
+    },
+    {
+      "name": "Contact7",
+      "profilePic": "https://cdn-icons-png.flaticon.com/512/5556/5556468.png"
+    },
+    {
+      "name": "Contact8",
+      "profilePic": "https://w7.pngwing.com/pngs/423/768/png-transparent-computer-icons-user-profile-avatar-woman-business-woman-face-heroes-orange.png"
+    },
+    {
+      "name": "Contact9",
+      "profilePic": "https://cdn-icons-png.flaticon.com/512/5556/5556499.png"
+    },
+    {
+      "name": "Contact10",
+      "profilePic": "https://e7.pngegg.com/pngimages/749/780/png-clipart-female-avatar-cartoon-user-avatar-purple-face-thumbnail.png"
+    },
+    {
+      "name": "Contact11",
+      "profilePic": "https://cdn-icons-png.flaticon.com/512/5556/5556558.png"
+    }
+  ],
   "conversations": [
     {
       "id": 1,
       "to": [
         {
-          "name": "Mahima",
+          "name": "Contact1",
           "profilePic": "https://cdn.dribbble.com/users/3734064/screenshots/14348087/media/a99ab961c8f8c7d29b5f7136e0b19ca4.png"
         }
       ],
@@ -13,7 +59,7 @@
           "chat": ["Hi da", "Ena panra"],
           "time": "8:47",
           "person": {
-            "name": "Mahima",
+            "name": "Contact1",
             "profilePic": "https://cdn.dribbble.com/users/3734064/screenshots/14348087/media/a99ab961c8f8c7d29b5f7136e0b19ca4.png"
           }
         },
@@ -29,7 +75,7 @@
           "chat": ["suma tha da", "Iniki ena plan ?"],
           "time": "8:49",
           "person": {
-            "name": "Mahima",
+            "name": "Contact1",
             "profilePic": "https://cdn.dribbble.com/users/3734064/screenshots/14348087/media/a99ab961c8f8c7d29b5f7136e0b19ca4.png"
           }
         },
@@ -37,7 +83,7 @@
           "chat": ["Hi da", "Ena panra"],
           "time": "8:50",
           "person": {
-            "name": "Mahima",
+            "name": "Contact1",
             "profilePic": "https://cdn.dribbble.com/users/3734064/screenshots/14348087/media/a99ab961c8f8c7d29b5f7136e0b19ca4.png"
           }
         },
@@ -53,7 +99,7 @@
           "chat": ["suma tha da", "Iniki ena plan ?"],
           "time": "8:56",
           "person": {
-            "name": "Mahima",
+            "name": "Contact1",
             "profilePic": "https://cdn.dribbble.com/users/3734064/screenshots/14348087/media/a99ab961c8f8c7d29b5f7136e0b19ca4.png"
           }
         }
@@ -63,7 +109,7 @@
       "id": 2,
       "to": [
         {
-          "name": "Abi",
+          "name": "Contact2",
           "profilePic": "https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-women-cartoon-avatar-in-flat-style-png-image_6110776.png"
         }
       ],
@@ -72,8 +118,170 @@
           "chat": ["Hi da", "Ena panra"],
           "time": "8:47",
           "person": {
-            "name": "Abi",
+            "name": "Contact2",
             "profilePic": "https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-women-cartoon-avatar-in-flat-style-png-image_6110776.png"
+          }
+        },
+        {
+          "chat": ["Hi", "Chumma tha neenga?"],
+          "time": "8:48",
+          "person": {
+            "name": "me",
+            "profilePic": "https://images.vexels.com/content/145908/preview/male-avatar-maker-2a7919.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "to": [
+        {
+          "name": "Contact3",
+          "profilePic": "https://png.pngtree.com/png-vector/20190525/ourmid/pngtree-man-avatar-icon-professional-man-character-png-image_1055448.jpg"
+        }
+      ],
+      "conversationList": [
+        {
+          "chat": ["Hi da", "Ena panra"],
+          "time": "8:47",
+          "person": {
+            "name": "Contact3",
+            "profilePic": "https://png.pngtree.com/png-vector/20190525/ourmid/pngtree-man-avatar-icon-professional-man-character-png-image_1055448.jpg"
+          }
+        },
+        {
+          "chat": ["Hi", "Chumma tha neenga?"],
+          "time": "8:48",
+          "person": {
+            "name": "me",
+            "profilePic": "https://images.vexels.com/content/145908/preview/male-avatar-maker-2a7919.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "to": [
+        {
+          "name": "Contact4",
+          "profilePic": "https://img.freepik.com/premium-vector/girl-s-face-with-beautiful-smile-female-avatar-website-social-network_499739-527.jpg"
+        }
+      ],
+      "conversationList": [
+        {
+          "chat": ["Hi da", "Ena panra"],
+          "time": "8:47",
+          "person": {
+            "name": "Contact4",
+            "profilePic": "https://img.freepik.com/premium-vector/girl-s-face-with-beautiful-smile-female-avatar-website-social-network_499739-527.jpg"
+          }
+        },
+        {
+          "chat": ["Hi", "Chumma tha neenga?"],
+          "time": "8:48",
+          "person": {
+            "name": "me",
+            "profilePic": "https://images.vexels.com/content/145908/preview/male-avatar-maker-2a7919.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "to": [
+        {
+          "name": "Contact5",
+          "profilePic": "https://png.pngtree.com/element_our/20190528/ourmid/pngtree-520-girl-avatar-image_1153283.jpg"
+        }
+      ],
+      "conversationList": [
+        {
+          "chat": ["Hi da", "Ena panra"],
+          "time": "8:47",
+          "person": {
+            "name": "Contact5",
+            "profilePic": "https://png.pngtree.com/element_our/20190528/ourmid/pngtree-520-girl-avatar-image_1153283.jpg"
+          }
+        },
+        {
+          "chat": ["Hi", "Chumma tha neenga?"],
+          "time": "8:48",
+          "person": {
+            "name": "me",
+            "profilePic": "https://images.vexels.com/content/145908/preview/male-avatar-maker-2a7919.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "to": [
+        {
+          "name": "Contact6",
+          "profilePic": "https://img.freepik.com/premium-vector/portrait-angry-young-woman_478440-114.jpg?size=626&ext=jpg"
+        }
+      ],
+      "conversationList": [
+        {
+          "chat": ["Hi da", "Ena panra"],
+          "time": "8:47",
+          "person": {
+            "name": "Contact6",
+            "profilePic": "https://img.freepik.com/premium-vector/portrait-angry-young-woman_478440-114.jpg?size=626&ext=jpg"
+          }
+        },
+        {
+          "chat": ["Hi", "Chumma tha neenga?"],
+          "time": "8:48",
+          "person": {
+            "name": "me",
+            "profilePic": "https://images.vexels.com/content/145908/preview/male-avatar-maker-2a7919.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "to": [
+        {
+          "name": "Contact7",
+          "profilePic": "https://cdn-icons-png.flaticon.com/512/5556/5556468.png"
+        }
+      ],
+      "conversationList": [
+        {
+          "chat": ["Hi da", "Ena panra"],
+          "time": "8:47",
+          "person": {
+            "name": "Contact7",
+            "profilePic": "https://cdn-icons-png.flaticon.com/512/5556/5556468.png"
+          }
+        },
+        {
+          "chat": ["Hi", "Chumma tha neenga?"],
+          "time": "8:48",
+          "person": {
+            "name": "me",
+            "profilePic": "https://images.vexels.com/content/145908/preview/male-avatar-maker-2a7919.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "to": [
+        {
+          "name": "Contact8",
+          "profilePic": "https://w7.pngwing.com/pngs/423/768/png-transparent-computer-icons-user-profile-avatar-woman-business-woman-face-heroes-orange.png"
+        }
+      ],
+      "conversationList": [
+        {
+          "chat": ["Hi da", "Ena panra"],
+          "time": "8:47",
+          "person": {
+            "name": "Contact8",
+            "profilePic": "https://w7.pngwing.com/pngs/423/768/png-transparent-computer-icons-user-profile-avatar-woman-business-woman-face-heroes-orange.png"
           }
         },
         {

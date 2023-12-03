@@ -26,7 +26,13 @@ function ChatExplorerHeader({ to }) {
       </div>
 
       {/* add participants */}
-      <div className={styles.addParticipantContainer}>Add participants</div>
+      <div className={styles.addParticipantContainer}>
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/148/148764.png"
+          alt="add_participant"
+          className={styles.addParticipant}
+        />
+      </div>
     </div>
   );
 }

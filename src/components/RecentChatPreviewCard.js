@@ -47,7 +47,7 @@ function RecentChatPreviewCard({
           {/* lastMessage */}
           <div className={styles.lastMessageContainer}>
             <div className={styles.lastMessage}>
-              {lastConversation.chat[lastConversation.chat.length - 1]}
+              {lastConversation && lastConversation.chat && lastConversation.chat[lastConversation.chat.length - 1]}
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@ function RecentChatPreviewCard({
 
       {/* right partition */}
       <div className={styles.rightPartition}>
-        <div className={styles.timeContainer}>{lastConversation.time}</div>
+        <div className={styles.timeContainer}>{lastConversation && lastConversation.time}</div>
       </div>
     </div>
   );

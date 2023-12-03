@@ -10,21 +10,57 @@ export const useChatConversations = () => {
 // Create a provider hook which will handle all the chat coversations related operations
 export const useChatConversationsProvider = () => {
   // Define the state required for this provider
-  const [chatConversations, setChatConversations] = useState(data.conversations);
+  const [chatConversations, setChatConversations] = useState(
+    data.conversations
+  );
   const [selectedChat, setSelectedChat] = useState(0);
 
-  // // Define the use effect method to load information from the source
-  // useEffect(() => {
-  //   // Read the required informations from data file
-  //   const getRequiredConversationInformation = data.conversations;
-  //   console.log("loading datas");
-
-  //   setChatCoversations(getRequiredConversationInformation);
-  // }, [chatCoversations, selectedChat]);
-
   // Define the implementations required for this provider
-  const addConversation = (chatCoversation) => {
-    setChatConversations(chatCoversation, ...chatConversations);
+  const addConversation = (chatCoversationRequest) => {
+    let isAlreadyExistingConversation = false;
+    let selectedChatForProcessing = selectedChat;
+
+    // Find if the chat conversation with requested name already exists
+
+    console.log(chatCoversationRequest);
+    chatConversations.map((chatConversation, index) => {
+      if (
+        chatConversation.to.length === 1 &&
+        chatConversation.to[0].name === chatCoversationRequest.to[0].name
+      ) {
+        console.log(chatConversation.to[0].name);
+        console.log(chatCoversationRequest.to[0].name);
+        isAlreadyExistingConversation = true;
+        selectedChatForProcessing = index;
+      }
+    });
+
+    console.log(isAlreadyExistingConversation);
+    console.log(selectedChatForProcessing);
+
+    if (!isAlreadyExistingConversation) {
+      selectedChatForProcessing = 0;
+      const newConversations = [chatCoversationRequest, ...chatConversations];
+      // Check if converation with user name already exists
+      setChatConversations(newConversations);
+    }
+
+    setSelectedChat(selectedChatForProcessing);
+  };
+
+  // This method is used to search the conversation with the name
+  const searchConversation = (name) => {
+    // Iterate the chat conversations
+    const exisitingConversationIndex = chatConversations.findIndex(
+      (conversation) => conversation.to[0].name === name
+    );
+
+    if (exisitingConversationIndex == -1) {
+      console.log("no users found with given name");
+    }
+
+    //If index present set that as selected contact
+    setSelectedChat(exisitingConversationIndex);
   };
 
   // This method is used to add a chat to the conversation requested
@@ -43,26 +79,8 @@ export const useChatConversationsProvider = () => {
         return chatConversation;
       }
     );
-
-    console.log("Updated Chat conversation", updatedChatConversation);
-
     // Set it to the state
     setChatConversations(updatedChatConversation);
-  };
-
-  // Chang the selector value based on cursor moving
-  // Up
-  const moveCursorUpOnChat = () => {
-    if (selectedChat > 0) {
-      setSelectedChat(selectedChat - 1);
-    }
-  };
-
-  // Down
-  const moveCursorDownOnChat = () => {
-    if (selectedChat < chatConversations.length - 1) {
-      setSelectedChat(selectedChat + 1);
-    }
   };
 
   const setSelectedChatInPreview = (index) => {
@@ -77,5 +95,6 @@ export const useChatConversationsProvider = () => {
     addConversation: addConversation,
     setSelectedChatInPreview: setSelectedChatInPreview,
     addChatToConversation: addChatToConversation,
+    searchConversation: searchConversation,
   };
 };

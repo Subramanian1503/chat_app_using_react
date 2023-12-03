@@ -9,6 +9,7 @@ const initialState = {
   addConversation: () => {},
   setSelectedChatInPreview: () => {},
   addChatToConversation: () => {},
+  searchConversation: () => {},
 };
 
 // Create context to save the chat conversations

@@ -1,0 +1,20 @@
+.contactList {
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contactList::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .contact{
+    height: 50px;
+    width: inherit;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.4);
+    margin-top: 5px;
+  }

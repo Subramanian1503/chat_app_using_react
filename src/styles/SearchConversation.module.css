@@ -1,0 +1,17 @@
+.searchContactContainer {
+  border: 2px solid black;
+  height: 75px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.searchInput {
+  margin-left: 10px;  
+  height: 50px;
+  width: 300px;
+  font-size: 18px;
+  border: none;
+}

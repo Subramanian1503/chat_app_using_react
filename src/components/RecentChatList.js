@@ -1,6 +1,7 @@
 import styles from "../styles/RecentChatList.module.css";
 import RecentChatPreviewCard from "../components/RecentChatPreviewCard";
 import { useChatConversations } from "../hooks";
+import RecentChatHeader from "./RecentChatHeader";
 
 function RecentChatList() {
   const chatConversationsImpl = useChatConversations();
@@ -9,13 +10,7 @@ function RecentChatList() {
   return (
     <div className={styles.recentChatListContainer}>
       {/* header for conversation */}
-      <div className={styles.recentChatListHeaderContainer}>
-        {/* left partition */}
-        <div className={styles.recentChatListHeader}>Conversation heading</div>
-
-        {/* right partition */}
-        <div className={styles.addChatButtonContainer}>Add</div>
-      </div>
+      <RecentChatHeader />
 
       {/* List of recent chat previews */}
       <ul className={styles.recentChatList}>
