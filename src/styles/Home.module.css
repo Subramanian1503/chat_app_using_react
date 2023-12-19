@@ -1,6 +1,6 @@
 .homeContainer {
-  height: 100vh;
-  width: 1515px;
+  height: 100%;
+  width: 100%;
   /* border: 2px solid black; */
   display: flex;
 }
